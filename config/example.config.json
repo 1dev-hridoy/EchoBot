@@ -1,0 +1,8 @@
+{
+    "botname": "YOUR_BOT_NAME",
+    "ownerName": "YOUR_NAME",
+    "adminUserIds": ["ADMIN1", "ADMIN2"],
+    "botToken": "YOUR_BOT_TOKEN",
+    "language": "en"
+  }
+  
