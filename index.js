@@ -1,7 +1,7 @@
 const { Telegraf } = require('telegraf');
 const mongoose = require('mongoose');
 const config = require('./config/config.json');
-const commandHandler = require('./utils/commandHandler');
+const { handleCommand, handleCallback } = require('./utils/commandHandler');
 const { addUserIfNotExists } = require('./database/userService');
 
 const bot = new Telegraf(config.botToken);
@@ -28,7 +28,7 @@ bot.on('text', async (ctx) => {
 
   // Command handling
   if (text.startsWith('/')) {
-    await commandHandler(ctx);
+    await handleCommand(ctx);
   }
 
   // Logging user messages
@@ -48,14 +48,18 @@ ${isNewUser ? '🎉 New user added to the database!' : '🔄 Existing user recog
   `);
 });
 
+// Handle callback queries
+bot.on('callback_query', handleCallback);
+
 // Launch the bot
-bot.launch().then(() => {
-  console.log(`
-┌─────────────────────────────────────────────┐
-✅  𝗕𝗼𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆!
-🌐  𝗕𝗼𝘁 𝗡𝗮𝗺𝗲: ${config.botname}
-👨‍💼  𝗢𝘄𝗻𝗲𝗿: ${config.ownerName}
-🕒  𝗧𝗶𝗺𝗲: ${new Date().toLocaleString()}
-└─────────────────────────────────────────────┘
-`);
-});
+bot.launch()
+  .then(() => {
+    console.log('🚀 Bot is running...');
+  })
+  .catch((err) => {
+    console.error('❌ Error starting bot:', err);
+  });
+
+// Enable graceful stop
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
