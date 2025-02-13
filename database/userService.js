@@ -19,4 +19,21 @@ async function addUserIfNotExists(ctx) {
   return false;
 }
 
-module.exports = { addUserIfNotExists };
+async function updateUserLocation(userId, city, country) {
+  await User.findOneAndUpdate(
+    { userId },
+    {
+      $set: {
+        city,
+        country,
+        lastLocationUpdate: new Date()
+      }
+    },
+    { upsert: true }
+  );
+}
+
+module.exports = { 
+  addUserIfNotExists,
+  updateUserLocation
+};

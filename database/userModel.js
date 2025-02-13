@@ -5,6 +5,9 @@ const userSchema = new mongoose.Schema({
   username: String,
   firstName: String,
   lastName: String,
+  city: String,
+  country: String,
+  lastLocationUpdate: Date,
   createdAt: Date
 });
 
