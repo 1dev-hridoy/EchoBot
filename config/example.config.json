@@ -4,6 +4,7 @@
     "adminUserIds": ["ADMIN1", "ADMIN2"],
     "botToken": "YOUR_BOT_TOKEN",
     "language": "en",
-    "mongoURI": "YOUR_DB_URI"
+    "mongoURI": "YOUR_DB_URI",
+    "openWeatherApiKey": "YOUR_WEATHER_API_KEY"
   }
   
