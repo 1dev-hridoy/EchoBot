@@ -3,6 +3,7 @@
     "ownerName": "YOUR_NAME",
     "adminUserIds": ["ADMIN1", "ADMIN2"],
     "botToken": "YOUR_BOT_TOKEN",
-    "language": "en"
+    "language": "en",
+    "mongoURI": "YOUR_DB_URI"
   }
   
