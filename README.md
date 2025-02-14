@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/3d145273-b9a0-4bb4-94f6-fcee65506040" alt="EchoBot Banner" width="600">
+<img src="https://github.com/user-attachments/assets/3d145273-b9a0-4bb4-94f6-fcee65506040" alt="EchoBot Banner" >
 
 </p>
 
