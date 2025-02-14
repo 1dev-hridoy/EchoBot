@@ -8,7 +8,8 @@
 </p>
 
 <p align="center">
-  ![banner](https://github.com/user-attachments/assets/1235cd9f-d30e-483d-b7a8-95657678cf97)
+![banner](https://github.com/user-attachments/assets/3d145273-b9a0-4bb4-94f6-fcee65506040)
+
 
 </p>
 
