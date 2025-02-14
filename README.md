@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-<img src="https://camo.githubusercontent.com/e84fdeeac366ac8b31bf5994e9338d319d7781f21e42b93a2ed22d77430ccebc/68747470733a2f2f692e6962622e636f2f674446363362382f6e6578616c6f2e6a7067" alt="EchoBot Banner" width="600">
+  ![banner](https://github.com/user-attachments/assets/1fce30d2-1967-47fa-adf9-d84d50d41b6d)
 </p>
 
 ## 📝 Description
