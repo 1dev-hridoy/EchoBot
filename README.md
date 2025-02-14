@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  ![banner](https://github.com/user-attachments/assets/1fce30d2-1967-47fa-adf9-d84d50d41b6d)
+<img src="https://github.com/user-attachments/assets/1fce30d2-1967-47fa-adf9-d84d50d41b6d" alt="EchoBot Banner" width="600">
 </p>
 
 ## 📝 Description
