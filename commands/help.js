@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { Markup } = require('telegraf');
+const config = require('../config/config.json');
 const pageSize = 5;
 
 module.exports = {
@@ -31,7 +32,11 @@ module.exports = {
       `⚙️ /${cmd.name}: ${cmd.description} (Cooldown: ${cmd.cooldown}s, Admin Only: ${cmd.adminOnly ? 'Yes' : 'No'})`
     ).join('\n') || "No commands available.";
     
-    return `📖 **Command List (Page ${page}/${totalPages})**\n\n${commandList}`;
+    return `╭──✦ [ Welcome to ${config.botname} ]\n` +
+           `│\n` +
+           `📖 Command List (Page ${page}/${totalPages})\n\n${commandList}\n\n` +
+           `│ Developed by: ${config.ownerName}\n` +
+           `╰──────────────────────◊`;
   },
 
   formatCommandInfo: (command) => {
